@@ -1,4 +1,6 @@
-const Index = () => (
+import { FC } from 'react';
+
+const Index: FC = () => (
   <main>
     <section>
       <h1>Transportation in Bay Area</h1>
@@ -20,5 +22,7 @@ const Index = () => (
     </section>
   </main>
 );
+
+Index.displayName = 'Index';
 
 export default Index;
