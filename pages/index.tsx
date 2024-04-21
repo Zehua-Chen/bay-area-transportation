@@ -1,26 +1,40 @@
 import { FC } from 'react';
+import Link from 'next/link';
+
+import Page from '@/components/Page';
+
+import styles from './index.module.scss';
+
+const SECTIONS = [
+  {
+    gridClassName: styles.App_gridCar,
+    title: 'Car',
+    href: 'car',
+  },
+  {
+    gridClassName: styles.App_gridPublicTransportation,
+    title: 'Public transportation',
+    href: 'public-transportation',
+  },
+  {
+    gridClassName: styles.App_gridBike,
+    title: 'Bike',
+    href: 'bike',
+  },
+];
 
 const Index: FC = () => (
-  <main>
-    <section>
+  <Page className={styles.App_grid}>
+    <section className={styles.App_gridTitle}>
       <h1>Transportation in Bay Area</h1>
     </section>
-    <section>
-      <h2>Biking</h2>
-      <ul>
-        <li>Payload</li>
-        <ul>
-          <li>Some bike frames do not support racks and baskets</li>
-          <li>Bike baskets may not be able to hold a lot of things</li>
-        </ul>
-        <li>Hills and bridges</li>
-        <ul>
-          <li>Going up the mountain can be stressful for the knee</li>
-          <li>Going down the slope can test the quality of the brakes</li>
-        </ul>
-      </ul>
-    </section>
-  </main>
+    {SECTIONS.map(({ gridClassName, title, href }) => (
+      <section key={title} className={gridClassName}>
+        <h2>{title}</h2>
+        <Link href={href}>Learn more</Link>
+      </section>
+    ))}
+  </Page>
 );
 
 Index.displayName = 'Index';

@@ -1,0 +1,24 @@
+$title: title;
+$car: car;
+$public-transportation: public-transportation;
+$bike: bike;
+
+.App_grid {
+  display: grid;
+  grid-template:
+    '#{$title} #{$title}'
+    '#{$car} #{$public-transportation}'
+    '#{$car} #{$bike}';
+}
+
+.App_gridTitle {
+  grid-area: $title;
+}
+
+.App_gridCar {
+  grid-area: $car;
+}
+
+.App_gridBike {
+  grid-area: $bike;
+}
