@@ -4,7 +4,7 @@ import { FC } from 'react';
 const PublicTransportation: FC = () => (
   <Page>
     <section>
-      <h2>Public transportation</h2>
+      <h1>Public transportation</h1>
 
       <section>
         <h3>Types of buses</h3>

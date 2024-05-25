@@ -24,16 +24,18 @@ const SECTIONS = [
 ];
 
 const Index: FC = () => (
-  <Page className={styles.App_grid}>
-    <section className={styles.App_gridTitle}>
-      <h1>Transportation in Bay Area</h1>
-    </section>
-    {SECTIONS.map(({ gridClassName, title, href }) => (
-      <section key={title} className={gridClassName}>
-        <h2>{title}</h2>
-        <Link href={href}>Learn more</Link>
+  <Page>
+    <div className={styles.App_grid}>
+      <section className={styles.App_gridTitle}>
+        <h1>Transportation in Bay Area</h1>
       </section>
-    ))}
+      {SECTIONS.map(({ gridClassName, title, href }) => (
+        <section key={title} className={gridClassName}>
+          <h2>{title}</h2>
+          <Link href={href}>Learn more</Link>
+        </section>
+      ))}
+    </div>
   </Page>
 );
 

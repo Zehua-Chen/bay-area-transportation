@@ -4,7 +4,7 @@ import Page from '@/components/Page';
 const Bike: FC = () => (
   <Page>
     <section>
-      <h2>Bike</h2>
+      <h1>Bike</h1>
       <ul>
         <li>Payload</li>
         <ul>

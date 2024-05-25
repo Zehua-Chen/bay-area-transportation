@@ -4,7 +4,7 @@ import { FC } from 'react';
 const Car: FC = () => (
   <Page>
     <section>
-      <h2>Car</h2>
+      <h1>Car</h1>
 
       <section>
         <h3>Insurance</h3>
