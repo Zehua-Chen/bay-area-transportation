@@ -2,6 +2,7 @@ import { FC } from 'react';
 import Link from 'next/link';
 
 import Page from '@/components/Page';
+import { PAGE_HREFS } from '@/utils/navigation';
 
 import styles from './index.module.scss';
 
@@ -9,17 +10,17 @@ const SECTIONS = [
   {
     gridClassName: styles.App_gridCar,
     title: 'Car',
-    href: 'car',
+    href: PAGE_HREFS.CAR,
   },
   {
     gridClassName: styles.App_gridPublicTransportation,
     title: 'Public transportation',
-    href: 'public-transportation',
+    href: PAGE_HREFS.PUBLIC_TRANSPORTATION,
   },
   {
     gridClassName: styles.App_gridBike,
     title: 'Bike',
-    href: 'bike',
+    href: PAGE_HREFS.BIKE,
   },
 ];
 

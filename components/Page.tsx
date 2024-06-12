@@ -30,7 +30,7 @@ const Page: FC<PageProps> = ({ className, children }) => (
   <>
     <nav className={clsx(styles.Page_nav)}>
       <div className={clsx(styles.Page_maxWidth, styles.Page_navContent)}>
-        <Link className={styles.Page_navRootLink} href={PAGE_HREFS.ROOT}>
+        <Link className={styles.Page_navRootLink} href={PAGE_HREFS.HOME}>
           <h1 className={styles.Page_navTitle}>
             <div>Transportation</div>
             <div className={styles.Page_navSubTitle}>of Bay Area</div>
