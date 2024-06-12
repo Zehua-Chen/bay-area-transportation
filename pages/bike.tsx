@@ -16,6 +16,14 @@ const Bike: FC = () => (
           <li>Going up the mountain can be stressful for the knee</li>
           <li>Going down the slope can test the quality of the brakes</li>
         </ul>
+        <li>Roads</li>
+        <ul>
+          <li>Not all roads have bike lanes</li>
+          <li>
+            Some bike lanes are dangerous; they pivot to the center of the road
+            near intersection
+          </li>
+        </ul>
       </ul>
     </section>
   </Page>

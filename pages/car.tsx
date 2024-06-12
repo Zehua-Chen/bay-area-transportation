@@ -22,6 +22,15 @@ const Car: FC = () => (
           <li>Carmax offers warranty (up to 3 years)</li>
         </ul>
       </section>
+
+      <section>
+        <h3>Highways</h3>
+        <ul>
+          <li>People may speed on 280</li>
+          <li>101 is busy and can have occasional crashes</li>
+          <li>92 have short entrances</li>
+        </ul>
+      </section>
     </section>
   </Page>
 );

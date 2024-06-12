@@ -6,25 +6,20 @@ const PublicTransportation: FC = () => (
     <section>
       <h1>Public transportation</h1>
 
-      <section>
-        <h3>Types of buses</h3>
+      <ul>
+        <li>Buses</li>
+        <li>Bart</li>
         <ul>
-          <li>Buses</li>
-          <li>Caltrain</li>
-          <li>
-            <a href="https://commute.org" target="_blank">
-              Commute.org
-            </a>
-          </li>
+          <li>Noisy</li>
+          <li>Unsafe</li>
         </ul>
-      </section>
-
-      <section>
-        <h3>Purchase</h3>
-        <ul>
-          <li>Carmax offers warranty (up to 3 years)</li>
-        </ul>
-      </section>
+        <li>Caltrain</li>
+        <li>
+          <a href="https://commute.org" target="_blank">
+            Commute.org
+          </a>
+        </li>
+      </ul>
     </section>
   </Page>
 );
